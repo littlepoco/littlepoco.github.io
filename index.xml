@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Here comes the sun</title>
+    <link>https://littlepoco.github.io/</link>
+    <description>Recent content on Here comes the sun</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <copyright>littlepoco</copyright>
+    <lastBuildDate>Wed, 26 May 2021 17:09:11 +0800</lastBuildDate><atom:link href="https://littlepoco.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>練習盲打</title>
+      <link>https://littlepoco.github.io/posts/typing/</link>
+      <pubDate>Wed, 26 May 2021 17:09:11 +0800</pubDate>
+      
+      <guid>https://littlepoco.github.io/posts/typing/</guid>
+      <description>最近想來練英文盲打，因為很常用到。 我主要透過這個網站練習， 就簡簡單單的練習，希望可以學會盲打。</description>
+    </item>
+    
+    <item>
+      <title>又要停課</title>
+      <link>https://littlepoco.github.io/posts/suspend_classes/</link>
+      <pubDate>Tue, 25 May 2021 16:28:54 +0800</pubDate>
+      
+      <guid>https://littlepoco.github.io/posts/suspend_classes/</guid>
+      <description>又要多停兩個禮拜的課，這簡直是一種折磨。雖然能在家裡耍廢蠻爽的，但是又有兩個禮拜不能見到同學 希望可以快點回去上課！</description>
+    </item>
+    
+    <item>
+      <title>Mac下提升數十倍效率的神器- Alfred</title>
+      <link>https://littlepoco.github.io/posts/alfred/</link>
+      <pubDate>Mon, 24 May 2021 15:10:00 +0800</pubDate>
+      
+      <guid>https://littlepoco.github.io/posts/alfred/</guid>
+      <description>介紹 Alfred是一個類似Mac自帶的Spotlight的軟體，但更強更快，用得好的話能提升數十倍的效率。 但是必須要付費才能解鎖全部的功能，日常使用下免費版就足夠了。
+官網下載： https://www.alfredapp.com/
+基本使用 1.搜尋並開啟某個App 2.打開某個檔案 3.找某個檔案 最基本的這幾個功能應該夠用了，Alfred還有許多強大的功能，可以去網路上找找。 而這篇文章之後還會再更新，會介紹更多Alfred的功能。</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>https://littlepoco.github.io/about/</link>
+      <pubDate>Mon, 24 May 2021 14:35:41 +0800</pubDate>
+      
+      <guid>https://littlepoco.github.io/about/</guid>
+      <description>I&amp;rsquo;m littlepoco 一個學生，興趣是打球、看書、聽音樂、程式設計，成績普普。有喜歡的女生，但又不想交女朋友。
+這個Blog主要記錄自己的一些想法，寫的東西也會跨很多個區間，主要是一些心得跟程式設計的東西。
+Github: littlepoco&amp;rsquo;s github
+Instagram: littlepoco&amp;rsquo;s instagram 這個帳號是私人帳號，想密我再加。</description>
+    </item>
+    
+  </channel>
+</rss>
