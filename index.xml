@@ -26,11 +26,11 @@ Scheme 介紹 Scheme是Guy Steele設計的一種Lisp方言，以「大道至簡�
   Text Editor的話用自己喜歡的就好了，我自己的話是用Emacs，但其實如果只是要學習Scheme的話，其實Scheme的REPL就好了。
 Chez Scheme Chez Scheme是一個Scheme的compiler，據說編譯後的Scheme速度非常快，反正我自己是不會用啦，具體可以參考王垠的Chez Scheme 的传说。
 安裝需要的東西需要下列這些:
- Make Git GCC  首先要把Chez Scheme Clone 到自己的電腦:
-接下來下以下Command:
-接下來等它跑完後輸入以下的指令:
-如果出現像這樣的畫面就安裝完成了:
-結語 這篇介紹及安裝完Scheme後，下篇要正式來教Scheme了，可以先期待一下。
+ Make Git GCC  首先在Terminal輸入以下Command把Chez Scheme Clone 到自己的電腦:
+ 接下來下以下Command:
+ 接下來等它跑完後輸入以下的指令:
+ 如果出現像這樣的畫面就安裝完成了:
+ 結語 這篇介紹及安裝完Scheme後，下篇要正式來教Scheme了，可以先期待一下。
 參考 https://github.com/cisco/ChezScheme/blob/main/BUILDING
 https://zh.wikipedia.org/wiki/LISP
 https://www.yinwang.org/blog-cn/2013/03/26/lisp-dead-alive</description>
