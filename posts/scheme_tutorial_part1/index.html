@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title> Scheme 教學 Part 1: 介紹與安裝 | Here comes the sun</title>
+  <meta name="description" content="記錄一些平常的一些瑣事、技術文章">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="all,follow">
+  <meta name="googlebot" content="index,follow,snippet,archive">
+  <meta property="og:title" content="Scheme 教學 Part 1: 介紹與安裝" />
+<meta property="og:description" content="前言 我之前想說來學學看一門Lisp方言，因為看到了王垠 (他寫的文章蠻有價值的，有時間的話可以去看一下)寫的許多關於Lisp的文章，所以我便決定學習Scheme。其實之前就有學了一點Racket ，但是當時沒有把它學完，所以這次決定好好學習Scheme。
+Lisp是什麼 Lisp是John McCarthy在1958年時設計的一種程式語言，是歷史上第二古老的程式語言(僅次於Fortran)，現代的許多程式語言的概念都是從Lisp借鑑過來的，包括:Garbage Collection、conditional expressions、Recursion、REPL&hellip;。
+Lisp有許多的優點，你可以參考王垠寫的這篇文章。
+而Lisp也衍生出許多方言，包括:今天要講的Scheme、Common Lisp、從Scheme衍生出去的Racket、Emacs的擴充語言Emacs Lisp、Clojure等等。
+Scheme 介紹 Scheme是Guy Steele設計的一種Lisp方言，以「大道至簡」為目標，著名的SICP便是使用Scheme來當作教學語言。
+安裝 簡單(偷懶?)的講完Scheme後要來安裝了。
+寫Scheme基本上只需要兩個東西:
+  Scheme的compiler
+  一個Text Editor
+  Text Editor的話用自己喜歡的就好了，我自己的話是用Emacs，但其實如果只是要學習Scheme的話，其實Scheme的REPL就好了。
+Chez Scheme Chez Scheme是一個Scheme的compiler，據說編譯後的Scheme速度非常快，反正我自己是不會用啦，具體可以參考王垠的Chez Scheme 的传说。
+安裝需要的東西需要下列這些:
+ Make Git GCC  首先要把Chez Scheme Clone 到自己的電腦:
+接下來下以下Command:
+接下來等它跑完後輸入以下的指令:
+如果出現像這樣的畫面就安裝完成了:
+結語 這篇介紹及安裝完Scheme後，下篇要正式來教Scheme了，可以先期待一下。
+參考 https://github.com/cisco/ChezScheme/blob/main/BUILDING
+https://zh.wikipedia.org/wiki/LISP
+https://www.yinwang.org/blog-cn/2013/03/26/lisp-dead-alive" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://littlepoco.github.io/posts/scheme_tutorial_part1/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-06-03T13:38:16&#43;08:00" />
+<meta property="article:modified_time" content="2021-06-03T13:38:16&#43;08:00" />
+
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Scheme 教學 Part 1: 介紹與安裝"/>
+<meta name="twitter:description" content="前言 我之前想說來學學看一門Lisp方言，因為看到了王垠 (他寫的文章蠻有價值的，有時間的話可以去看一下)寫的許多關於Lisp的文章，所以我便決定學習Scheme。其實之前就有學了一點Racket ，但是當時沒有把它學完，所以這次決定好好學習Scheme。
+Lisp是什麼 Lisp是John McCarthy在1958年時設計的一種程式語言，是歷史上第二古老的程式語言(僅次於Fortran)，現代的許多程式語言的概念都是從Lisp借鑑過來的，包括:Garbage Collection、conditional expressions、Recursion、REPL&hellip;。
+Lisp有許多的優點，你可以參考王垠寫的這篇文章。
+而Lisp也衍生出許多方言，包括:今天要講的Scheme、Common Lisp、從Scheme衍生出去的Racket、Emacs的擴充語言Emacs Lisp、Clojure等等。
+Scheme 介紹 Scheme是Guy Steele設計的一種Lisp方言，以「大道至簡」為目標，著名的SICP便是使用Scheme來當作教學語言。
+安裝 簡單(偷懶?)的講完Scheme後要來安裝了。
+寫Scheme基本上只需要兩個東西:
+  Scheme的compiler
+  一個Text Editor
+  Text Editor的話用自己喜歡的就好了，我自己的話是用Emacs，但其實如果只是要學習Scheme的話，其實Scheme的REPL就好了。
+Chez Scheme Chez Scheme是一個Scheme的compiler，據說編譯後的Scheme速度非常快，反正我自己是不會用啦，具體可以參考王垠的Chez Scheme 的传说。
+安裝需要的東西需要下列這些:
+ Make Git GCC  首先要把Chez Scheme Clone 到自己的電腦:
+接下來下以下Command:
+接下來等它跑完後輸入以下的指令:
+如果出現像這樣的畫面就安裝完成了:
+結語 這篇介紹及安裝完Scheme後，下篇要正式來教Scheme了，可以先期待一下。
+參考 https://github.com/cisco/ChezScheme/blob/main/BUILDING
+https://zh.wikipedia.org/wiki/LISP
+https://www.yinwang.org/blog-cn/2013/03/26/lisp-dead-alive"/>
+
+  
+  
+    
+  
+  
+  <link rel="stylesheet" href="https://littlepoco.github.io/css/style-white.css">
+  
+  
+  
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  
+
+  
+<link rel="icon" type="image/png" href="https://littlepoco.github.io/images/favicon.ico" />
+
+  
+  
+  
+  
+</head>
+
+<body class="max-width mx-auto px3 ltr">
+  <div class="content index py4">
+
+  <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;" aria-label="Top of Page"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+        <li><a href="/">首頁</a></li>
+         
+        <li><a href="/posts">文章列表</a></li>
+         
+        <li><a href="/tags">標籤</a></li>
+         
+        <li><a href="/about">關於我</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li>
+          <a class="icon" href=" https://littlepoco.github.io/posts/typing/" aria-label="Previous">
+            <i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i>
+          </a>
+        </li>
+        
+        
+        <li>
+          <a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" aria-label="Top of Page">
+            <i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i>
+          </a>
+        </li>
+        <li>
+          <a class="icon" href="#" aria-label="Share">
+            <i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i>
+          </a>
+        </li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2flittlepoco.github.io%2fposts%2fscheme_tutorial_part1%2f" aria-label="Facebook">
+      <i class="fab fa-facebook " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2flittlepoco.github.io%2fposts%2fscheme_tutorial_part1%2f&text=Scheme%20%e6%95%99%e5%ad%b8%20Part%201%3a%20%e4%bb%8b%e7%b4%b9%e8%88%87%e5%ae%89%e8%a3%9d" aria-label="Twitter">
+      <i class="fab fa-twitter " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2flittlepoco.github.io%2fposts%2fscheme_tutorial_part1%2f&title=Scheme%20%e6%95%99%e5%ad%b8%20Part%201%3a%20%e4%bb%8b%e7%b4%b9%e8%88%87%e5%ae%89%e8%a3%9d" aria-label="Linkedin">
+      <i class="fab fa-linkedin " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2flittlepoco.github.io%2fposts%2fscheme_tutorial_part1%2f&is_video=false&description=Scheme%20%e6%95%99%e5%ad%b8%20Part%201%3a%20%e4%bb%8b%e7%b4%b9%e8%88%87%e5%ae%89%e8%a3%9d" aria-label="Pinterest">
+      <i class="fab fa-pinterest " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=Scheme%20%e6%95%99%e5%ad%b8%20Part%201%3a%20%e4%bb%8b%e7%b4%b9%e8%88%87%e5%ae%89%e8%a3%9d&body=Check out this article: https%3a%2f%2flittlepoco.github.io%2fposts%2fscheme_tutorial_part1%2f" aria-label="Email">
+      <i class="fas fa-envelope " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2flittlepoco.github.io%2fposts%2fscheme_tutorial_part1%2f&title=Scheme%20%e6%95%99%e5%ad%b8%20Part%201%3a%20%e4%bb%8b%e7%b4%b9%e8%88%87%e5%ae%89%e8%a3%9d" aria-label="Pocket">
+      <i class="fab fa-get-pocket " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2flittlepoco.github.io%2fposts%2fscheme_tutorial_part1%2f&title=Scheme%20%e6%95%99%e5%ad%b8%20Part%201%3a%20%e4%bb%8b%e7%b4%b9%e8%88%87%e5%ae%89%e8%a3%9d" aria-label="reddit">
+      <i class="fab fa-reddit " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2flittlepoco.github.io%2fposts%2fscheme_tutorial_part1%2f&name=Scheme%20%e6%95%99%e5%ad%b8%20Part%201%3a%20%e4%bb%8b%e7%b4%b9%e8%88%87%e5%ae%89%e8%a3%9d&description=%e5%89%8d%e8%a8%80%20%e6%88%91%e4%b9%8b%e5%89%8d%e6%83%b3%e8%aa%aa%e4%be%86%e5%ad%b8%e5%ad%b8%e7%9c%8b%e4%b8%80%e9%96%80Lisp%e6%96%b9%e8%a8%80%ef%bc%8c%e5%9b%a0%e7%82%ba%e7%9c%8b%e5%88%b0%e4%ba%86%e7%8e%8b%e5%9e%a0%20%28%e4%bb%96%e5%af%ab%e7%9a%84%e6%96%87%e7%ab%a0%e8%a0%bb%e6%9c%89%e5%83%b9%e5%80%bc%e7%9a%84%ef%bc%8c%e6%9c%89%e6%99%82%e9%96%93%e7%9a%84%e8%a9%b1%e5%8f%af%e4%bb%a5%e5%8e%bb%e7%9c%8b%e4%b8%80%e4%b8%8b%29%e5%af%ab%e7%9a%84%e8%a8%b1%e5%a4%9a%e9%97%9c%e6%96%bcLisp%e7%9a%84%e6%96%87%e7%ab%a0%ef%bc%8c%e6%89%80%e4%bb%a5%e6%88%91%e4%be%bf%e6%b1%ba%e5%ae%9a%e5%ad%b8%e7%bf%92Scheme%e3%80%82%e5%85%b6%e5%af%a6%e4%b9%8b%e5%89%8d%e5%b0%b1%e6%9c%89%e5%ad%b8%e4%ba%86%e4%b8%80%e9%bb%9eRacket%20%ef%bc%8c%e4%bd%86%e6%98%af%e7%95%b6%e6%99%82%e6%b2%92%e6%9c%89%e6%8a%8a%e5%ae%83%e5%ad%b8%e5%ae%8c%ef%bc%8c%e6%89%80%e4%bb%a5%e9%80%99%e6%ac%a1%e6%b1%ba%e5%ae%9a%e5%a5%bd%e5%a5%bd%e5%ad%b8%e7%bf%92Scheme%e3%80%82%0aLisp%e6%98%af%e4%bb%80%e9%ba%bc%20Lisp%e6%98%afJohn%20McCarthy%e5%9c%a81958%e5%b9%b4%e6%99%82%e8%a8%ad%e8%a8%88%e7%9a%84%e4%b8%80%e7%a8%ae%e7%a8%8b%e5%bc%8f%e8%aa%9e%e8%a8%80%ef%bc%8c%e6%98%af%e6%ad%b7%e5%8f%b2%e4%b8%8a%e7%ac%ac%e4%ba%8c%e5%8f%a4%e8%80%81%e7%9a%84%e7%a8%8b%e5%bc%8f%e8%aa%9e%e8%a8%80%28%e5%83%85%e6%ac%a1%e6%96%bcFortran%29%ef%bc%8c%e7%8f%be%e4%bb%a3%e7%9a%84%e8%a8%b1%e5%a4%9a%e7%a8%8b%e5%bc%8f%e8%aa%9e%e8%a8%80%e7%9a%84%e6%a6%82%e5%bf%b5%e9%83%bd%e6%98%af%e5%be%9eLisp%e5%80%9f%e9%91%91%e9%81%8e%e4%be%86%e7%9a%84%ef%bc%8c%e5%8c%85%e6%8b%ac%3aGarbage%20Collection%e3%80%81conditional%20expressions%e3%80%81Recursion%e3%80%81REPL%26hellip%3b%e3%80%82%0aLisp%e6%9c%89%e8%a8%b1%e5%a4%9a%e7%9a%84%e5%84%aa%e9%bb%9e%ef%bc%8c%e4%bd%a0%e5%8f%af%e4%bb%a5%e5%8f%83%e8%80%83%e7%8e%8b%e5%9e%a0%e5%af%ab%e7%9a%84%e9%80%99%e7%af%87%e6%96%87%e7%ab%a0%e3%80%82%0a%e8%80%8cLisp%e4%b9%9f%e8%a1%8d%e7%94%9f%e5%87%ba%e8%a8%b1%e5%a4%9a%e6%96%b9%e8%a8%80%ef%bc%8c%e5%8c%85%e6%8b%ac%3a%e4%bb%8a%e5%a4%a9%e8%a6%81%e8%ac%9b%e7%9a%84Scheme%e3%80%81Common%20Lisp%e3%80%81%e5%be%9eScheme%e8%a1%8d%e7%94%9f%e5%87%ba%e5%8e%bb%e7%9a%84Racket%e3%80%81Emacs%e7%9a%84%e6%93%b4%e5%85%85%e8%aa%9e%e8%a8%80Emacs%20Lisp%e3%80%81Clojure%e7%ad%89%e7%ad%89%e3%80%82%0aScheme%20%e4%bb%8b%e7%b4%b9%20Scheme%e6%98%afGuy%20Steele%e8%a8%ad%e8%a8%88%e7%9a%84%e4%b8%80%e7%a8%aeLisp%e6%96%b9%e8%a8%80%ef%bc%8c%e4%bb%a5%e3%80%8c%e5%a4%a7%e9%81%93%e8%87%b3%e7%b0%a1%e3%80%8d%e7%82%ba%e7%9b%ae%e6%a8%99%ef%bc%8c%e8%91%97%e5%90%8d%e7%9a%84SICP%e4%be%bf%e6%98%af%e4%bd%bf%e7%94%a8Scheme%e4%be%86%e7%95%b6%e4%bd%9c%e6%95%99%e5%ad%b8%e8%aa%9e%e8%a8%80%e3%80%82%0a%e5%ae%89%e8%a3%9d%20%e7%b0%a1%e5%96%ae%28%e5%81%b7%e6%87%b6%3f%29%e7%9a%84%e8%ac%9b%e5%ae%8cScheme%e5%be%8c%e8%a6%81%e4%be%86%e5%ae%89%e8%a3%9d%e4%ba%86%e3%80%82%0a%e5%af%abScheme%e5%9f%ba%e6%9c%ac%e4%b8%8a%e5%8f%aa%e9%9c%80%e8%a6%81%e5%85%a9%e5%80%8b%e6%9d%b1%e8%a5%bf%3a%0a%20%20Scheme%e7%9a%84compiler%0a%20%20%e4%b8%80%e5%80%8bText%20Editor%0a%20%20Text%20Editor%e7%9a%84%e8%a9%b1%e7%94%a8%e8%87%aa%e5%b7%b1%e5%96%9c%e6%ad%a1%e7%9a%84%e5%b0%b1%e5%a5%bd%e4%ba%86%ef%bc%8c%e6%88%91%e8%87%aa%e5%b7%b1%e7%9a%84%e8%a9%b1%e6%98%af%e7%94%a8Emacs%ef%bc%8c%e4%bd%86%e5%85%b6%e5%af%a6%e5%a6%82%e6%9e%9c%e5%8f%aa%e6%98%af%e8%a6%81%e5%ad%b8%e7%bf%92Scheme%e7%9a%84%e8%a9%b1%ef%bc%8c%e5%85%b6%e5%af%a6Scheme%e7%9a%84REPL%e5%b0%b1%e5%a5%bd%e4%ba%86%e3%80%82%0aChez%20Scheme%20Chez%20Scheme%e6%98%af%e4%b8%80%e5%80%8bScheme%e7%9a%84compiler%ef%bc%8c%e6%93%9a%e8%aa%aa%e7%b7%a8%e8%ad%af%e5%be%8c%e7%9a%84Scheme%e9%80%9f%e5%ba%a6%e9%9d%9e%e5%b8%b8%e5%bf%ab%ef%bc%8c%e5%8f%8d%e6%ad%a3%e6%88%91%e8%87%aa%e5%b7%b1%e6%98%af%e4%b8%8d%e6%9c%83%e7%94%a8%e5%95%a6%ef%bc%8c%e5%85%b7%e9%ab%94%e5%8f%af%e4%bb%a5%e5%8f%83%e8%80%83%e7%8e%8b%e5%9e%a0%e7%9a%84Chez%20Scheme%20%e7%9a%84%e4%bc%a0%e8%af%b4%e3%80%82%0a%e5%ae%89%e8%a3%9d%e9%9c%80%e8%a6%81%e7%9a%84%e6%9d%b1%e8%a5%bf%e9%9c%80%e8%a6%81%e4%b8%8b%e5%88%97%e9%80%99%e4%ba%9b%3a%0a%20Make%20Git%20GCC%20%20%e9%a6%96%e5%85%88%e8%a6%81%e6%8a%8aChez%20Scheme%20Clone%20%e5%88%b0%e8%87%aa%e5%b7%b1%e7%9a%84%e9%9b%bb%e8%85%a6%3a%0a%e6%8e%a5%e4%b8%8b%e4%be%86%e4%b8%8b%e4%bb%a5%e4%b8%8bCommand%3a%0a%e6%8e%a5%e4%b8%8b%e4%be%86%e7%ad%89%e5%ae%83%e8%b7%91%e5%ae%8c%e5%be%8c%e8%bc%b8%e5%85%a5%e4%bb%a5%e4%b8%8b%e7%9a%84%e6%8c%87%e4%bb%a4%3a%0a%e5%a6%82%e6%9e%9c%e5%87%ba%e7%8f%be%e5%83%8f%e9%80%99%e6%a8%a3%e7%9a%84%e7%95%ab%e9%9d%a2%e5%b0%b1%e5%ae%89%e8%a3%9d%e5%ae%8c%e6%88%90%e4%ba%86%3a%0a%e7%b5%90%e8%aa%9e%20%e9%80%99%e7%af%87%e4%bb%8b%e7%b4%b9%e5%8f%8a%e5%ae%89%e8%a3%9d%e5%ae%8cScheme%e5%be%8c%ef%bc%8c%e4%b8%8b%e7%af%87%e8%a6%81%e6%ad%a3%e5%bc%8f%e4%be%86%e6%95%99Scheme%e4%ba%86%ef%bc%8c%e5%8f%af%e4%bb%a5%e5%85%88%e6%9c%9f%e5%be%85%e4%b8%80%e4%b8%8b%e3%80%82%0a%e5%8f%83%e8%80%83%20https%3a%2f%2fgithub.com%2fcisco%2fChezScheme%2fblob%2fmain%2fBUILDING%0ahttps%3a%2f%2fzh.wikipedia.org%2fwiki%2fLISP%0ahttps%3a%2f%2fwww.yinwang.org%2fblog-cn%2f2013%2f03%2f26%2flisp-dead-alive" aria-label="Tumblr">
+      <i class="fab fa-tumblr " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2flittlepoco.github.io%2fposts%2fscheme_tutorial_part1%2f&t=Scheme%20%e6%95%99%e5%ad%b8%20Part%201%3a%20%e4%bb%8b%e7%b4%b9%e8%88%87%e5%ae%89%e8%a3%9d" aria-label="Hacker News">
+      <i class="fab fa-hacker-news " aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+    <div id="toc">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#前言">前言</a></li>
+    <li><a href="#lisp是什麼">Lisp是什麼</a></li>
+    <li><a href="#scheme-介紹">Scheme 介紹</a></li>
+    <li><a href="#安裝">安裝</a>
+      <ul>
+        <li><a href="#chez-scheme">Chez Scheme</a></li>
+      </ul>
+    </li>
+    <li><a href="#結語">結語</a></li>
+    <li><a href="#參考">參考</a></li>
+  </ul>
+</nav>
+    </div>
+  </span>
+</div>
+
+
+  <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+    <header>
+      <h1 class="posttitle" itemprop="name headline">
+        Scheme 教學 Part 1: 介紹與安裝
+      </h1>
+      <div class="meta">
+        
+        <div class="postdate">
+          
+          <time datetime="2021-06-03 13:38:16 &#43;0800 CST" itemprop="datePublished">2021-06-03</time>
+          
+        </div>
+        
+        
+        <div class="article-read-time">
+          <i class="far fa-clock"></i>
+          
+          4 minute read
+        </div>
+        
+        
+        
+        <div class="article-tag">
+            <i class="fas fa-tag"></i>
+            
+            
+            <a class="tag-link" href="/tags/scheme" rel="tag">Scheme</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/programming" rel="tag">Programming</a>
+            
+        </div>
+        
+      </div>
+    </header>
+
+  
+    <div class="content" itemprop="articleBody">
+      <p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Lisp_logo.svg/1200px-Lisp_logo.svg.png" alt="Lisp"></p>
+<h2 id="前言">前言</h2>
+<p>我之前想說來學學看一門Lisp方言，因為看到了<a href="https://yinwang.org/">王垠</a> (他寫的文章蠻有價值的，有時間的話可以去看一下)寫的許多關於Lisp的文章，所以我便決定學習Scheme。其實之前就有學了一點<a href="https://racket-lang.org">Racket</a> ，但是當時沒有把它學完，所以這次決定好好學習Scheme。</p>
+<h2 id="lisp是什麼">Lisp是什麼</h2>
+<p>Lisp是John McCarthy在1958年時設計的一種程式語言，是歷史上第二古老的程式語言(僅次於Fortran)，現代的許多程式語言的概念都是從Lisp借鑑過來的，包括:<a href="https://zh.wikipedia.org/wiki/%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6_(%E8%A8%88%E7%AE%97%E6%A9%9F%E7%A7%91%E5%AD%B8)">Garbage Collection</a>、<a href="https://zh.wikipedia.org/wiki/%E6%A2%9D%E4%BB%B6%E9%81%8B%E7%AE%97%E5%BC%8F">conditional expressions</a>、<a href="https://zh.wikipedia.org/wiki/%E9%80%92%E5%BD%92">Recursion</a>、<a href="https://zh.wikipedia.org/wiki/%E8%AF%BB%E5%8F%96%EF%B9%A3%E6%B1%82%E5%80%BC%EF%B9%A3%E8%BE%93%E5%87%BA%E5%BE%AA%E7%8E%AF">REPL</a>&hellip;。</p>
+<p>Lisp有許多的優點，你可以參考王垠寫的<a href="https://www.yinwang.org/blog-cn/2013/03/26/lisp-dead-alive">這篇文章</a>。</p>
+<p>而Lisp也衍生出許多方言，包括:今天要講的Scheme、Common Lisp、從Scheme衍生出去的Racket、Emacs的擴充語言Emacs Lisp、Clojure等等。</p>
+<h2 id="scheme-介紹">Scheme 介紹</h2>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Lambda_lc.svg/100px-Lambda_lc.svg.png" alt="Scheme"></p>
+<p>Scheme是Guy Steele設計的一種Lisp方言，以「大道至簡」為目標，著名的<a href="https://zh.wikipedia.org/wiki/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A8%8B%E5%BA%8F%E7%9A%84%E6%9E%84%E9%80%A0%E5%92%8C%E8%A7%A3%E9%87%8A">SICP</a>便是使用Scheme來當作教學語言。</p>
+<h2 id="安裝">安裝</h2>
+<p>簡單(偷懶?)的講完Scheme後要來安裝了。</p>
+<p>寫Scheme基本上只需要兩個東西:</p>
+<ul>
+<li>
+<p>Scheme的compiler</p>
+</li>
+<li>
+<p>一個Text Editor</p>
+</li>
+</ul>
+<p>Text Editor的話用自己喜歡的就好了，我自己的話是用Emacs，但其實如果只是要學習Scheme的話，其實Scheme的REPL就好了。</p>
+<h3 id="chez-scheme">Chez Scheme</h3>
+<p>Chez Scheme是一個Scheme的compiler，據說編譯後的Scheme速度非常快，反正我自己是不會用啦，具體可以參考王垠的<a href="(https://www.yinwang.org/blog-cn/2013/03/28/chez-scheme)">Chez Scheme 的传说</a>。</p>
+<p>安裝需要的東西需要下列這些:</p>
+<ul>
+<li>Make</li>
+<li>Git</li>
+<li>GCC</li>
+</ul>
+<p>首先要把Chez Scheme Clone 到自己的電腦:</p>
+<!-- raw HTML omitted -->
+<p>接下來下以下Command:</p>
+<!-- raw HTML omitted -->
+<p>接下來等它跑完後輸入以下的指令:</p>
+<!-- raw HTML omitted -->
+<p>如果出現像這樣的畫面就安裝完成了:</p>
+<!-- raw HTML omitted -->
+<h2 id="結語">結語</h2>
+<p>這篇介紹及安裝完Scheme後，下篇要正式來教Scheme了，可以先期待一下。</p>
+<h2 id="參考">參考</h2>
+<p><a href="https://github.com/cisco/ChezScheme/blob/main/BUILDING">https://github.com/cisco/ChezScheme/blob/main/BUILDING</a></p>
+<p><a href="https://zh.wikipedia.org/wiki/LISP">https://zh.wikipedia.org/wiki/LISP</a></p>
+<p><a href="https://www.yinwang.org/blog-cn/2013/03/26/lisp-dead-alive">https://www.yinwang.org/blog-cn/2013/03/26/lisp-dead-alive</a></p>
+
+    </div>
+  </article>
+
+  
+  
+
+
+
+
+
+  <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">首頁</a></li>
+         
+          <li><a href="/posts">文章列表</a></li>
+         
+          <li><a href="/tags">標籤</a></li>
+         
+          <li><a href="/about">關於我</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#前言">前言</a></li>
+    <li><a href="#lisp是什麼">Lisp是什麼</a></li>
+    <li><a href="#scheme-介紹">Scheme 介紹</a></li>
+    <li><a href="#安裝">安裝</a>
+      <ul>
+        <li><a href="#chez-scheme">Chez Scheme</a></li>
+      </ul>
+    </li>
+    <li><a href="#結語">結語</a></li>
+    <li><a href="#參考">參考</a></li>
+  </ul>
+</nav>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2flittlepoco.github.io%2fposts%2fscheme_tutorial_part1%2f" aria-label="Facebook">
+      <i class="fab fa-facebook fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2flittlepoco.github.io%2fposts%2fscheme_tutorial_part1%2f&text=Scheme%20%e6%95%99%e5%ad%b8%20Part%201%3a%20%e4%bb%8b%e7%b4%b9%e8%88%87%e5%ae%89%e8%a3%9d" aria-label="Twitter">
+      <i class="fab fa-twitter fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2flittlepoco.github.io%2fposts%2fscheme_tutorial_part1%2f&title=Scheme%20%e6%95%99%e5%ad%b8%20Part%201%3a%20%e4%bb%8b%e7%b4%b9%e8%88%87%e5%ae%89%e8%a3%9d" aria-label="Linkedin">
+      <i class="fab fa-linkedin fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2flittlepoco.github.io%2fposts%2fscheme_tutorial_part1%2f&is_video=false&description=Scheme%20%e6%95%99%e5%ad%b8%20Part%201%3a%20%e4%bb%8b%e7%b4%b9%e8%88%87%e5%ae%89%e8%a3%9d" aria-label="Pinterest">
+      <i class="fab fa-pinterest fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=Scheme%20%e6%95%99%e5%ad%b8%20Part%201%3a%20%e4%bb%8b%e7%b4%b9%e8%88%87%e5%ae%89%e8%a3%9d&body=Check out this article: https%3a%2f%2flittlepoco.github.io%2fposts%2fscheme_tutorial_part1%2f" aria-label="Email">
+      <i class="fas fa-envelope fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2flittlepoco.github.io%2fposts%2fscheme_tutorial_part1%2f&title=Scheme%20%e6%95%99%e5%ad%b8%20Part%201%3a%20%e4%bb%8b%e7%b4%b9%e8%88%87%e5%ae%89%e8%a3%9d" aria-label="Pocket">
+      <i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2flittlepoco.github.io%2fposts%2fscheme_tutorial_part1%2f&title=Scheme%20%e6%95%99%e5%ad%b8%20Part%201%3a%20%e4%bb%8b%e7%b4%b9%e8%88%87%e5%ae%89%e8%a3%9d" aria-label="reddit">
+      <i class="fab fa-reddit fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2flittlepoco.github.io%2fposts%2fscheme_tutorial_part1%2f&name=Scheme%20%e6%95%99%e5%ad%b8%20Part%201%3a%20%e4%bb%8b%e7%b4%b9%e8%88%87%e5%ae%89%e8%a3%9d&description=%e5%89%8d%e8%a8%80%20%e6%88%91%e4%b9%8b%e5%89%8d%e6%83%b3%e8%aa%aa%e4%be%86%e5%ad%b8%e5%ad%b8%e7%9c%8b%e4%b8%80%e9%96%80Lisp%e6%96%b9%e8%a8%80%ef%bc%8c%e5%9b%a0%e7%82%ba%e7%9c%8b%e5%88%b0%e4%ba%86%e7%8e%8b%e5%9e%a0%20%28%e4%bb%96%e5%af%ab%e7%9a%84%e6%96%87%e7%ab%a0%e8%a0%bb%e6%9c%89%e5%83%b9%e5%80%bc%e7%9a%84%ef%bc%8c%e6%9c%89%e6%99%82%e9%96%93%e7%9a%84%e8%a9%b1%e5%8f%af%e4%bb%a5%e5%8e%bb%e7%9c%8b%e4%b8%80%e4%b8%8b%29%e5%af%ab%e7%9a%84%e8%a8%b1%e5%a4%9a%e9%97%9c%e6%96%bcLisp%e7%9a%84%e6%96%87%e7%ab%a0%ef%bc%8c%e6%89%80%e4%bb%a5%e6%88%91%e4%be%bf%e6%b1%ba%e5%ae%9a%e5%ad%b8%e7%bf%92Scheme%e3%80%82%e5%85%b6%e5%af%a6%e4%b9%8b%e5%89%8d%e5%b0%b1%e6%9c%89%e5%ad%b8%e4%ba%86%e4%b8%80%e9%bb%9eRacket%20%ef%bc%8c%e4%bd%86%e6%98%af%e7%95%b6%e6%99%82%e6%b2%92%e6%9c%89%e6%8a%8a%e5%ae%83%e5%ad%b8%e5%ae%8c%ef%bc%8c%e6%89%80%e4%bb%a5%e9%80%99%e6%ac%a1%e6%b1%ba%e5%ae%9a%e5%a5%bd%e5%a5%bd%e5%ad%b8%e7%bf%92Scheme%e3%80%82%0aLisp%e6%98%af%e4%bb%80%e9%ba%bc%20Lisp%e6%98%afJohn%20McCarthy%e5%9c%a81958%e5%b9%b4%e6%99%82%e8%a8%ad%e8%a8%88%e7%9a%84%e4%b8%80%e7%a8%ae%e7%a8%8b%e5%bc%8f%e8%aa%9e%e8%a8%80%ef%bc%8c%e6%98%af%e6%ad%b7%e5%8f%b2%e4%b8%8a%e7%ac%ac%e4%ba%8c%e5%8f%a4%e8%80%81%e7%9a%84%e7%a8%8b%e5%bc%8f%e8%aa%9e%e8%a8%80%28%e5%83%85%e6%ac%a1%e6%96%bcFortran%29%ef%bc%8c%e7%8f%be%e4%bb%a3%e7%9a%84%e8%a8%b1%e5%a4%9a%e7%a8%8b%e5%bc%8f%e8%aa%9e%e8%a8%80%e7%9a%84%e6%a6%82%e5%bf%b5%e9%83%bd%e6%98%af%e5%be%9eLisp%e5%80%9f%e9%91%91%e9%81%8e%e4%be%86%e7%9a%84%ef%bc%8c%e5%8c%85%e6%8b%ac%3aGarbage%20Collection%e3%80%81conditional%20expressions%e3%80%81Recursion%e3%80%81REPL%26hellip%3b%e3%80%82%0aLisp%e6%9c%89%e8%a8%b1%e5%a4%9a%e7%9a%84%e5%84%aa%e9%bb%9e%ef%bc%8c%e4%bd%a0%e5%8f%af%e4%bb%a5%e5%8f%83%e8%80%83%e7%8e%8b%e5%9e%a0%e5%af%ab%e7%9a%84%e9%80%99%e7%af%87%e6%96%87%e7%ab%a0%e3%80%82%0a%e8%80%8cLisp%e4%b9%9f%e8%a1%8d%e7%94%9f%e5%87%ba%e8%a8%b1%e5%a4%9a%e6%96%b9%e8%a8%80%ef%bc%8c%e5%8c%85%e6%8b%ac%3a%e4%bb%8a%e5%a4%a9%e8%a6%81%e8%ac%9b%e7%9a%84Scheme%e3%80%81Common%20Lisp%e3%80%81%e5%be%9eScheme%e8%a1%8d%e7%94%9f%e5%87%ba%e5%8e%bb%e7%9a%84Racket%e3%80%81Emacs%e7%9a%84%e6%93%b4%e5%85%85%e8%aa%9e%e8%a8%80Emacs%20Lisp%e3%80%81Clojure%e7%ad%89%e7%ad%89%e3%80%82%0aScheme%20%e4%bb%8b%e7%b4%b9%20Scheme%e6%98%afGuy%20Steele%e8%a8%ad%e8%a8%88%e7%9a%84%e4%b8%80%e7%a8%aeLisp%e6%96%b9%e8%a8%80%ef%bc%8c%e4%bb%a5%e3%80%8c%e5%a4%a7%e9%81%93%e8%87%b3%e7%b0%a1%e3%80%8d%e7%82%ba%e7%9b%ae%e6%a8%99%ef%bc%8c%e8%91%97%e5%90%8d%e7%9a%84SICP%e4%be%bf%e6%98%af%e4%bd%bf%e7%94%a8Scheme%e4%be%86%e7%95%b6%e4%bd%9c%e6%95%99%e5%ad%b8%e8%aa%9e%e8%a8%80%e3%80%82%0a%e5%ae%89%e8%a3%9d%20%e7%b0%a1%e5%96%ae%28%e5%81%b7%e6%87%b6%3f%29%e7%9a%84%e8%ac%9b%e5%ae%8cScheme%e5%be%8c%e8%a6%81%e4%be%86%e5%ae%89%e8%a3%9d%e4%ba%86%e3%80%82%0a%e5%af%abScheme%e5%9f%ba%e6%9c%ac%e4%b8%8a%e5%8f%aa%e9%9c%80%e8%a6%81%e5%85%a9%e5%80%8b%e6%9d%b1%e8%a5%bf%3a%0a%20%20Scheme%e7%9a%84compiler%0a%20%20%e4%b8%80%e5%80%8bText%20Editor%0a%20%20Text%20Editor%e7%9a%84%e8%a9%b1%e7%94%a8%e8%87%aa%e5%b7%b1%e5%96%9c%e6%ad%a1%e7%9a%84%e5%b0%b1%e5%a5%bd%e4%ba%86%ef%bc%8c%e6%88%91%e8%87%aa%e5%b7%b1%e7%9a%84%e8%a9%b1%e6%98%af%e7%94%a8Emacs%ef%bc%8c%e4%bd%86%e5%85%b6%e5%af%a6%e5%a6%82%e6%9e%9c%e5%8f%aa%e6%98%af%e8%a6%81%e5%ad%b8%e7%bf%92Scheme%e7%9a%84%e8%a9%b1%ef%bc%8c%e5%85%b6%e5%af%a6Scheme%e7%9a%84REPL%e5%b0%b1%e5%a5%bd%e4%ba%86%e3%80%82%0aChez%20Scheme%20Chez%20Scheme%e6%98%af%e4%b8%80%e5%80%8bScheme%e7%9a%84compiler%ef%bc%8c%e6%93%9a%e8%aa%aa%e7%b7%a8%e8%ad%af%e5%be%8c%e7%9a%84Scheme%e9%80%9f%e5%ba%a6%e9%9d%9e%e5%b8%b8%e5%bf%ab%ef%bc%8c%e5%8f%8d%e6%ad%a3%e6%88%91%e8%87%aa%e5%b7%b1%e6%98%af%e4%b8%8d%e6%9c%83%e7%94%a8%e5%95%a6%ef%bc%8c%e5%85%b7%e9%ab%94%e5%8f%af%e4%bb%a5%e5%8f%83%e8%80%83%e7%8e%8b%e5%9e%a0%e7%9a%84Chez%20Scheme%20%e7%9a%84%e4%bc%a0%e8%af%b4%e3%80%82%0a%e5%ae%89%e8%a3%9d%e9%9c%80%e8%a6%81%e7%9a%84%e6%9d%b1%e8%a5%bf%e9%9c%80%e8%a6%81%e4%b8%8b%e5%88%97%e9%80%99%e4%ba%9b%3a%0a%20Make%20Git%20GCC%20%20%e9%a6%96%e5%85%88%e8%a6%81%e6%8a%8aChez%20Scheme%20Clone%20%e5%88%b0%e8%87%aa%e5%b7%b1%e7%9a%84%e9%9b%bb%e8%85%a6%3a%0a%e6%8e%a5%e4%b8%8b%e4%be%86%e4%b8%8b%e4%bb%a5%e4%b8%8bCommand%3a%0a%e6%8e%a5%e4%b8%8b%e4%be%86%e7%ad%89%e5%ae%83%e8%b7%91%e5%ae%8c%e5%be%8c%e8%bc%b8%e5%85%a5%e4%bb%a5%e4%b8%8b%e7%9a%84%e6%8c%87%e4%bb%a4%3a%0a%e5%a6%82%e6%9e%9c%e5%87%ba%e7%8f%be%e5%83%8f%e9%80%99%e6%a8%a3%e7%9a%84%e7%95%ab%e9%9d%a2%e5%b0%b1%e5%ae%89%e8%a3%9d%e5%ae%8c%e6%88%90%e4%ba%86%3a%0a%e7%b5%90%e8%aa%9e%20%e9%80%99%e7%af%87%e4%bb%8b%e7%b4%b9%e5%8f%8a%e5%ae%89%e8%a3%9d%e5%ae%8cScheme%e5%be%8c%ef%bc%8c%e4%b8%8b%e7%af%87%e8%a6%81%e6%ad%a3%e5%bc%8f%e4%be%86%e6%95%99Scheme%e4%ba%86%ef%bc%8c%e5%8f%af%e4%bb%a5%e5%85%88%e6%9c%9f%e5%be%85%e4%b8%80%e4%b8%8b%e3%80%82%0a%e5%8f%83%e8%80%83%20https%3a%2f%2fgithub.com%2fcisco%2fChezScheme%2fblob%2fmain%2fBUILDING%0ahttps%3a%2f%2fzh.wikipedia.org%2fwiki%2fLISP%0ahttps%3a%2f%2fwww.yinwang.org%2fblog-cn%2f2013%2f03%2f26%2flisp-dead-alive" aria-label="Tumblr">
+      <i class="fab fa-tumblr fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2flittlepoco.github.io%2fposts%2fscheme_tutorial_part1%2f&t=Scheme%20%e6%95%99%e5%ad%b8%20Part%201%3a%20%e4%bb%8b%e7%b4%b9%e8%88%87%e5%ae%89%e8%a3%9d" aria-label="Hacker News">
+      <i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+      
+        <a id="menu-toggle" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;" aria-label="Menu">
+          <i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        <a id="toc-toggle" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;" aria-label="TOC">
+          <i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        <a id="share-toggle" class="icon" href="#" onclick="$('#share-footer').toggle();return false;" aria-label="Share">
+          <i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" aria-label="Top of Page">
+          <i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+
+  <footer id="footer">
+  <div class="footer-left">
+    Copyright  &copy; 2021  littlepoco 
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+        <li><a href="/">首頁</a></li>
+         
+        <li><a href="/posts">文章列表</a></li>
+         
+        <li><a href="/tags">標籤</a></li>
+         
+        <li><a href="/about">關於我</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+
+  </div>
+</body>
+
+<link rel="stylesheet" href=/lib/font-awesome/css/all.min.css>
+<script src=/lib/jquery/jquery.min.js></script>
+<script src=/js/main.js></script>
+
+
+
+</html>

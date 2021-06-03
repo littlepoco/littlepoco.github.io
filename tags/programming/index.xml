@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Here comes the sun</title>
-    <link>https://littlepoco.github.io/posts/</link>
-    <description>Recent content in Posts on Here comes the sun</description>
+    <title>Programming on Here comes the sun</title>
+    <link>https://littlepoco.github.io/tags/programming/</link>
+    <description>Recent content in Programming on Here comes the sun</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
     <copyright>littlepoco</copyright>
-    <lastBuildDate>Thu, 03 Jun 2021 13:38:16 +0800</lastBuildDate><atom:link href="https://littlepoco.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 03 Jun 2021 13:38:16 +0800</lastBuildDate><atom:link href="https://littlepoco.github.io/tags/programming/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Scheme 教學 Part 1: 介紹與安裝</title>
       <link>https://littlepoco.github.io/posts/scheme_tutorial_part1/</link>
@@ -34,15 +34,6 @@ Chez Scheme Chez Scheme是一個Scheme的compiler，據說編譯後的Scheme速�
 參考 https://github.com/cisco/ChezScheme/blob/main/BUILDING
 https://zh.wikipedia.org/wiki/LISP
 https://www.yinwang.org/blog-cn/2013/03/26/lisp-dead-alive</description>
-    </item>
-    
-    <item>
-      <title>練習盲打</title>
-      <link>https://littlepoco.github.io/posts/typing/</link>
-      <pubDate>Wed, 26 May 2021 17:09:11 +0800</pubDate>
-      
-      <guid>https://littlepoco.github.io/posts/typing/</guid>
-      <description>最近想來練英文盲打，因為很常用到。 我主要透過這個網站練習， 就簡簡單單的練習，希望可以學會盲打。</description>
     </item>
     
   </channel>

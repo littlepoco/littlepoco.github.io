@@ -7,7 +7,35 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
     <copyright>littlepoco</copyright>
-    <lastBuildDate>Wed, 26 May 2021 17:09:11 +0800</lastBuildDate><atom:link href="https://littlepoco.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 03 Jun 2021 13:38:16 +0800</lastBuildDate><atom:link href="https://littlepoco.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Scheme 教學 Part 1: 介紹與安裝</title>
+      <link>https://littlepoco.github.io/posts/scheme_tutorial_part1/</link>
+      <pubDate>Thu, 03 Jun 2021 13:38:16 +0800</pubDate>
+      
+      <guid>https://littlepoco.github.io/posts/scheme_tutorial_part1/</guid>
+      <description>前言 我之前想說來學學看一門Lisp方言，因為看到了王垠 (他寫的文章蠻有價值的，有時間的話可以去看一下)寫的許多關於Lisp的文章，所以我便決定學習Scheme。其實之前就有學了一點Racket ，但是當時沒有把它學完，所以這次決定好好學習Scheme。
+Lisp是什麼 Lisp是John McCarthy在1958年時設計的一種程式語言，是歷史上第二古老的程式語言(僅次於Fortran)，現代的許多程式語言的概念都是從Lisp借鑑過來的，包括:Garbage Collection、conditional expressions、Recursion、REPL&amp;hellip;。
+Lisp有許多的優點，你可以參考王垠寫的這篇文章。
+而Lisp也衍生出許多方言，包括:今天要講的Scheme、Common Lisp、從Scheme衍生出去的Racket、Emacs的擴充語言Emacs Lisp、Clojure等等。
+Scheme 介紹 Scheme是Guy Steele設計的一種Lisp方言，以「大道至簡」為目標，著名的SICP便是使用Scheme來當作教學語言。
+安裝 簡單(偷懶?)的講完Scheme後要來安裝了。
+寫Scheme基本上只需要兩個東西:
+  Scheme的compiler
+  一個Text Editor
+  Text Editor的話用自己喜歡的就好了，我自己的話是用Emacs，但其實如果只是要學習Scheme的話，其實Scheme的REPL就好了。
+Chez Scheme Chez Scheme是一個Scheme的compiler，據說編譯後的Scheme速度非常快，反正我自己是不會用啦，具體可以參考王垠的Chez Scheme 的传说。
+安裝需要的東西需要下列這些:
+ Make Git GCC  首先要把Chez Scheme Clone 到自己的電腦:
+接下來下以下Command:
+接下來等它跑完後輸入以下的指令:
+如果出現像這樣的畫面就安裝完成了:
+結語 這篇介紹及安裝完Scheme後，下篇要正式來教Scheme了，可以先期待一下。
+參考 https://github.com/cisco/ChezScheme/blob/main/BUILDING
+https://zh.wikipedia.org/wiki/LISP
+https://www.yinwang.org/blog-cn/2013/03/26/lisp-dead-alive</description>
+    </item>
+    
     <item>
       <title>練習盲打</title>
       <link>https://littlepoco.github.io/posts/typing/</link>
@@ -15,26 +43,6 @@
       
       <guid>https://littlepoco.github.io/posts/typing/</guid>
       <description>最近想來練英文盲打，因為很常用到。 我主要透過這個網站練習， 就簡簡單單的練習，希望可以學會盲打。</description>
-    </item>
-    
-    <item>
-      <title>又要停課</title>
-      <link>https://littlepoco.github.io/posts/suspend_classes/</link>
-      <pubDate>Tue, 25 May 2021 16:28:54 +0800</pubDate>
-      
-      <guid>https://littlepoco.github.io/posts/suspend_classes/</guid>
-      <description>又要多停兩個禮拜的課，這簡直是一種折磨。雖然能在家裡耍廢蠻爽的，但是又有兩個禮拜不能見到同學 希望可以快點回去上課！</description>
-    </item>
-    
-    <item>
-      <title>Mac下提升數十倍效率的神器- Alfred</title>
-      <link>https://littlepoco.github.io/posts/alfred/</link>
-      <pubDate>Mon, 24 May 2021 15:10:00 +0800</pubDate>
-      
-      <guid>https://littlepoco.github.io/posts/alfred/</guid>
-      <description>介紹 Alfred是一個類似Mac自帶的Spotlight的軟體，但更強更快，用得好的話能提升數十倍的效率。 但是必須要付費才能解鎖全部的功能，日常使用下免費版就足夠了。
-官網下載： https://www.alfredapp.com/
-基本使用 1.搜尋並開啟某個App 2.打開某個檔案 3.找某個檔案 最基本的這幾個功能應該夠用了，Alfred還有許多強大的功能，可以去網路上找找。 而這篇文章之後還會再更新，會介紹更多Alfred的功能。</description>
     </item>
     
     <item>
