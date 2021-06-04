@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+
+
+
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Here comes the sun</title>
+        <link>https://littlepoco.github.io/</link>
+        <description>隨手寫寫一些技術文章或雜文.</description>
+        <generator>Hugo 0.83.1 https://gohugo.io/</generator>
+        
+            <language>zh-TW</language>
+        
+        
+            <managingEditor>littlepocotw@yahoo.com (littlepoco)</managingEditor>
+        
+        
+            <webMaster>littlepocotw@yahoo.com (littlepoco)</webMaster>
+        
+        
+            <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
+        
+        <lastBuildDate>Fri, 04 Jun 2021 10:06:46 &#43;0800</lastBuildDate>
+        
+            <atom:link rel="self" type="application/rss&#43;xml" href="https://littlepoco.github.io/rss.xml" />
+        
+        
+            <item>
+                <title>Scheme 教學 Part 1: 介紹與安裝</title>
+                <link>https://littlepoco.github.io/posts/scheme_tutorial_part1/</link>
+                <guid isPermaLink="true">https://littlepoco.github.io/posts/scheme_tutorial_part1/</guid>
+                <pubDate>Thu, 03 Jun 2021 13:38:16 &#43;0800</pubDate>
+                
+                    <author>littlepocotw@yahoo.com (littlepoco)</author>
+                
+                <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
+                
+                    <description>&lt;p&gt;&lt;img src=&#34;https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Lisp_logo.svg/1200px-Lisp_logo.svg.png&#34; alt=&#34;Lisp&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;p&gt;我之前想說來學學看一門Lisp方言，因為看到了&lt;a href=&#34;https://yinwang.org/&#34;&gt;王垠&lt;/a&gt; (他寫的文章蠻有價值的，有時間的話可以去看一下)寫的許多關於Lisp的文章，所以我便決定學習Scheme。其實之前就有學了一點&lt;a href=&#34;https://racket-lang.org&#34;&gt;Racket&lt;/a&gt; ，但是當時沒有把它學完，所以這次決定好好學習Scheme。&lt;/p&gt;
+&lt;h2 id=&#34;lisp是什麼&#34;&gt;Lisp是什麼&lt;/h2&gt;
+&lt;p&gt;Lisp是John McCarthy在1958年時設計的一種程式語言，是歷史上第二古老的程式語言(僅次於Fortran)，現代的許多程式語言的概念都是從Lisp借鑑過來的，包括:&lt;a href=&#34;https://zh.wikipedia.org/wiki/%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6_(%E8%A8%88%E7%AE%97%E6%A9%9F%E7%A7%91%E5%AD%B8)&#34;&gt;Garbage Collection&lt;/a&gt;、&lt;a href=&#34;https://zh.wikipedia.org/wiki/%E6%A2%9D%E4%BB%B6%E9%81%8B%E7%AE%97%E5%BC%8F&#34;&gt;conditional expressions&lt;/a&gt;、&lt;a href=&#34;https://zh.wikipedia.org/wiki/%E9%80%92%E5%BD%92&#34;&gt;Recursion&lt;/a&gt;、&lt;a href=&#34;https://zh.wikipedia.org/wiki/%E8%AF%BB%E5%8F%96%EF%B9%A3%E6%B1%82%E5%80%BC%EF%B9%A3%E8%BE%93%E5%87%BA%E5%BE%AA%E7%8E%AF&#34;&gt;REPL&lt;/a&gt;...。&lt;/p&gt;
+&lt;p&gt;Lisp有許多的優點，你可以參考王垠寫的&lt;a href=&#34;https://www.yinwang.org/blog-cn/2013/03/26/lisp-dead-alive&#34;&gt;這篇文章&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;而Lisp也衍生出許多方言，包括:今天要講的Scheme、Common Lisp、從Scheme衍生出去的Racket、Emacs的擴充語言Emacs Lisp、Clojure等等。&lt;/p&gt;
+&lt;h2 id=&#34;scheme-介紹&#34;&gt;Scheme 介紹&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Lambda_lc.svg/100px-Lambda_lc.svg.png&#34; alt=&#34;Scheme&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Scheme是Guy Steele設計的一種Lisp方言，以「大道至簡」為目標，著名的&lt;a href=&#34;https://zh.wikipedia.org/wiki/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A8%8B%E5%BA%8F%E7%9A%84%E6%9E%84%E9%80%A0%E5%92%8C%E8%A7%A3%E9%87%8A&#34;&gt;SICP&lt;/a&gt;便是使用Scheme來當作教學語言。&lt;/p&gt;
+&lt;h2 id=&#34;安裝&#34;&gt;安裝&lt;/h2&gt;
+&lt;p&gt;簡單(偷懶?)的講完Scheme後要來安裝了。&lt;/p&gt;
+&lt;p&gt;寫Scheme基本上只需要兩個東西:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Scheme的compiler&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;一個Text Editor&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Text Editor的話用自己喜歡的就好了，我自己的話是用Emacs，但其實如果只是要學習Scheme的話，其實Scheme的REPL就好了。&lt;/p&gt;
+&lt;h3 id=&#34;chez-scheme&#34;&gt;Chez Scheme&lt;/h3&gt;
+&lt;p&gt;Chez Scheme是一個Scheme的compiler，據說編譯後的Scheme速度非常快，反正我自己是不會用啦，具體可以參考王垠的&lt;a href=&#34;(https://www.yinwang.org/blog-cn/2013/03/28/chez-scheme)&#34;&gt;Chez Scheme 的传说&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;安裝需要的東西需要下列這些:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Make&lt;/li&gt;
+&lt;li&gt;Git&lt;/li&gt;
+&lt;li&gt;GCC&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;首先在Terminal輸入以下Command把Chez Scheme Clone 到自己的電腦:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;git clone https://github.com/cisco/ChezScheme.git
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;接下來下以下Command:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;./configure
+sudo make install
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;接下來等它跑完後輸入以下的指令:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;scheme
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;如果出現像這樣的畫面就安裝完成了:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;Chez Scheme Version 9.5.5
+Copyright 1984-2020 Cisco Systems, Inc.
+
+&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id=&#34;結語&#34;&gt;結語&lt;/h2&gt;
+&lt;p&gt;這篇介紹及安裝完Scheme後，下篇要正式來教Scheme了，可以先期待一下。&lt;/p&gt;
+&lt;h2 id=&#34;參考&#34;&gt;參考&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/cisco/ChezScheme/blob/main/BUILDING&#34;&gt;https://github.com/cisco/ChezScheme/blob/main/BUILDING&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://zh.wikipedia.org/wiki/LISP&#34;&gt;https://zh.wikipedia.org/wiki/LISP&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.yinwang.org/blog-cn/2013/03/26/lisp-dead-alive&#34;&gt;https://www.yinwang.org/blog-cn/2013/03/26/lisp-dead-alive&lt;/a&gt;&lt;/p&gt;
+</description>
+                
+                
+                
+                
+                
+                    
+                        
+                    
+                        
+                            
+                                
+                                
+                                
+                                    <category domain="https://littlepoco.github.io/tags/scheme/">Scheme</category>
+                                
+                            
+                                
+                                
+                                
+                                    <category domain="https://littlepoco.github.io/tags/programming/">Programming</category>
+                                
+                            
+                        
+                    
+                
+            </item>
+        
+    </channel>
+</rss>
