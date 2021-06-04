@@ -23,10 +23,157 @@
         
             <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
         
-        <lastBuildDate>Fri, 04 Jun 2021 12:14:09 &#43;0800</lastBuildDate>
+        <lastBuildDate>Fri, 04 Jun 2021 16:07:28 &#43;0800</lastBuildDate>
         
             <atom:link rel="self" type="application/rss&#43;xml" href="https://littlepoco.github.io/rss.xml" />
         
+        
+            <item>
+                <title>Scheme 教學 Part 2: 初次見面</title>
+                <link>https://littlepoco.github.io/posts/scheme_tutorial_part2/</link>
+                <guid isPermaLink="true">https://littlepoco.github.io/posts/scheme_tutorial_part2/</guid>
+                <pubDate>Fri, 04 Jun 2021 08:49:13 &#43;0800</pubDate>
+                
+                    <author>littlepocotw@yahoo.com (littlepoco)</author>
+                
+                <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
+                
+                    <description>&lt;p&gt;&lt;img src=&#34;https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Lambda_lc.svg/100px-Lambda_lc.svg.png&#34; alt=&#34;Scheme&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;p&gt;這篇是Scheme教學的第二篇，還沒看過&lt;a href=&#34;https://littlepoco.github.io/posts/scheme_tutorial_part1/&#34;&gt;上一篇&lt;/a&gt;的趕快去看，這篇要來正式來教Scheme，那就廢話不多說，來開始吧。&lt;/p&gt;
+&lt;h2 id=&#34;把-scheme-當作計算機&#34;&gt;把 Scheme 當作計算機&lt;/h2&gt;
+&lt;p&gt;在上一篇提到，在Terminal底下輸入&lt;code&gt;scheme&lt;/code&gt; ，會出現像這樣的畫面:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;Chez Scheme Version 9.5.5
+Copyright 1984-2020 Cisco Systems, Inc.
+
+&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;這個其實就是Scheme的REPL，你輸入什麼它便會給你一個輸出，在REPL裡面試試輸入&lt;code&gt;1+1&lt;/code&gt; :&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&amp;gt; 1+1
+Exception: variable &lt;span class=&#34;se&#34;&gt;\x&lt;/span&gt;31&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;+1 is not bound
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;誒？&lt;code&gt;1+1&lt;/code&gt;不是等於2嗎？&lt;/p&gt;
+&lt;p&gt;那是因為Scheme採用了&lt;a href=&#34;https://zh.wikipedia.org/wiki/S-%E8%A1%A8%E8%BE%BE%E5%BC%8F&#34;&gt;S-表達式&lt;/a&gt;，這是一種特殊的語法，想得到&lt;code&gt;1+1&lt;/code&gt;的結果必須像下面這樣:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&amp;gt; &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;+ &lt;span class=&#34;m&#34;&gt;1&lt;/span&gt; 1&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;
+&lt;span class=&#34;m&#34;&gt;2&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;必須要把+放在前面，然後用括號括起來，這裡的+就是一個函數。這種語法有很多優點，假如你要計算&lt;code&gt;2+3+4&lt;/code&gt;你只要像下面這樣就好了:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-scheme&#34; data-lang=&#34;scheme&#34;&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;+ &lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;2&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;3&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;4&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;還有像如果你要計算&lt;code&gt;1+2*3&lt;/code&gt;，那你是要1先加2再乘3，還是2乘3在加1呢？所以我們才會制定先乘除後加減、括號先計算的規則。在Lisp裡面，這種語法基本上避免了歧義，都是先從最裡面那層開始算：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-scheme&#34; data-lang=&#34;scheme&#34;&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;+ &lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;* &lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;2&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;3&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;))&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;關於這種語法的更多優點，你可以參考王垠的這篇文章:&lt;a href=&#34;https://www.yinwang.org/blog-cn/2013/03/08/on-syntax&#34;&gt;谈语法&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;只要懂Lisp這種特有的語法後，其實也蠻有趣的。&lt;/p&gt;
+&lt;h3 id=&#34;加減乘除&#34;&gt;加減乘除&lt;/h3&gt;
+&lt;p&gt;Scheme除了語法比較怪異以外，其他的加減乘除就跟數學一樣了。&lt;/p&gt;
+&lt;p&gt;Scheme跟其他大部分的Lisp方言一樣，也可以處理分數。&lt;/p&gt;
+&lt;p&gt;函數&lt;code&gt;exact-&amp;gt;inexact&lt;/code&gt; 用來把分數轉為浮點數。&lt;code&gt;+&lt;/code&gt;、&lt;code&gt;-&lt;/code&gt;、&lt;code&gt;*&lt;/code&gt;、&lt;code&gt;/&lt;/code&gt;分別代表加、減、乘、除。這些函數都接受無限多的參數。&lt;/p&gt;
+&lt;p&gt;例:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-scheme&#34; data-lang=&#34;scheme&#34;&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;+ &lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;5&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;10&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;  &lt;span class=&#34;c1&#34;&gt;;-&amp;gt; 15&lt;/span&gt;
+&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;+ &lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;2&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;3&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;5&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;;-&amp;gt; 10&lt;/span&gt;
+&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;- &lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;20&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;3&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;  &lt;span class=&#34;c1&#34;&gt;;-&amp;gt; 17&lt;/span&gt;
+&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;- &lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;5&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;2&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;;-&amp;gt; 2&lt;/span&gt;
+&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;* &lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;5&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;5&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;   &lt;span class=&#34;c1&#34;&gt;;-&amp;gt; 25&lt;/span&gt;
+&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;* &lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;5&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;5&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;5&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;;-&amp;gt; 125&lt;/span&gt;
+&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;/ &lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;3&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;4&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;   &lt;span class=&#34;c1&#34;&gt;;-&amp;gt; 3/4&lt;/span&gt;
+&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;/ &lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;5&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;2&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;3&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;;-&amp;gt; 5/6&lt;/span&gt;
+&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;/ &lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;6&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;3&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;   &lt;span class=&#34;c1&#34;&gt;;-&amp;gt; 2&lt;/span&gt;
+&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;exact-&amp;gt;inexact &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;/ &lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;5&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;2&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;3&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;))&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;;-&amp;gt; 0.8333333333333334&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;pre&gt;&lt;code&gt;練習:
+
+在Scheme的REPL裡面計算下列的式子:
+
+1. (3+40) * (13+14)
+2. (1020 / 39) + (45 * 2)
+3. 求和: 1, 25, 18, 100, 5
+4. 求平均值: 1, 25, 18, 100,5 (結果取為浮點數)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;想退出Scheme的REPL只要輸入&lt;code&gt;(exit)&lt;/code&gt;就好了喔。&lt;/p&gt;
+&lt;h2 id=&#34;結語&#34;&gt;結語&lt;/h2&gt;
+&lt;p&gt;這篇講完了Scheme特別的S-表達式和簡單的加減乘除後，下篇要繼續來講Scheme的變數，各位可以先練習一下Scheme 。&lt;/p&gt;
+&lt;h2 id=&#34;參考&#34;&gt;參考&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://deathking.github.io/yast-cn/contents/chapter2.html&#34;&gt;https://deathking.github.io/yast-cn/contents/chapter2.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.yinwang.org/blog-cn/2013/03/08/on-syntax&#34;&gt;https://www.yinwang.org/blog-cn/2013/03/08/on-syntax&lt;/a&gt;&lt;/p&gt;
+</description>
+                
+                
+                
+                
+                
+                    
+                        
+                    
+                        
+                            
+                                
+                                
+                                
+                                    <category domain="https://littlepoco.github.io/tags/scheme/">Scheme</category>
+                                
+                            
+                                
+                                
+                                
+                                    <category domain="https://littlepoco.github.io/tags/programming/">Programming</category>
+                                
+                            
+                        
+                    
+                
+            </item>
         
             <item>
                 <title>Scheme 教學 Part 1: 介紹與安裝</title>
