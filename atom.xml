@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-TW">
     <title type="text">littlepoco&#39;s Blog</title>
     <subtitle type="html">隨手寫寫一些技術文章或雜文.</subtitle>
-    <updated>2021-06-11T08:50:29&#43;08:00</updated>
+    <updated>2021-06-16T14:50:28&#43;08:00</updated>
     <id>https://littlepoco.github.io/</id>
     <link rel="alternate" type="text/html" href="https://littlepoco.github.io/" />
     <link rel="self" type="application/atom&#43;xml" href="https://littlepoco.github.io/atom.xml" />
@@ -17,10 +17,62 @@
     <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</rights>
     <generator uri="https://gohugo.io/" version="0.83.1">Hugo</generator>
         <entry>
+            <title type="text">Among Us 遊玩心得</title>
+            <link rel="alternate" type="text/html" href="https://littlepoco.github.io/posts/among_us/" />
+            <id>https://littlepoco.github.io/posts/among_us/</id>
+            <updated>2021-06-16T14:47:15&#43;08:00</updated>
+            <published>2021-06-16T14:34:15&#43;08:00</published>
+            <author>
+                    <name>littlepoco</name>
+                    <uri>https://littlepoco.github.io</uri>
+                    <email>littlepocotw@yahoo.com</email>
+                    </author>
+            <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</rights><summary type="html">Among Us 這遊戲其實很早就紅了，但我一直沒有去玩，因為我以為這遊戲需要開語音，加上完全沒有動力去玩，所以我一直沒有機會玩。 最近我去下載來玩，Amo……</summary>
+            
+                <content type="html">&lt;p&gt;&lt;img src=&#34;https://upload.wikimedia.org/wikipedia/zh/0/0d/Among_Us_Promo_2018.jpg&#34; alt=&#34;Among Us&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Among Us 這遊戲其實很早就紅了，但我一直沒有去玩，因為我以為這遊戲需要開語音，加上完全沒有動力去玩，所以我一直沒有機會玩。&lt;/p&gt;
+&lt;p&gt;最近我去下載來玩，Among Us 其實還不錯玩，基本上就是狼人殺的玩法。手機版整個遊戲介面都是英文的，電腦版則有補丁，但只要英文不要太爛，多玩個幾把大概就懂了。&lt;/p&gt;
+&lt;p&gt;下面是我的一些心得:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;一定要找朋友玩，不然你真的會被氣瘋。&lt;/li&gt;
+&lt;li&gt;好人絕對要找一個Partner，不然你被懷疑又拿不出證據。&lt;/li&gt;
+&lt;li&gt;很難把所有任務解完獲勝，因為大部分人死掉之後都不去解任務。&lt;/li&gt;
+&lt;li&gt;路人局基本上沒什麼討論，誰跳出來帶風向，每個人就跟尚書大人一樣，風往哪邊吹就往哪裡倒。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;如果想玩的話，建議找朋友一起玩，然後開語音。路人局有時候真的很無聊。&lt;/p&gt;
+</content>
+            
+            
+            
+            
+            
+                
+                    
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="https://littlepoco.github.io/tags/%E9%81%8A%E6%88%B2/" term="遊戲" label="遊戲" />
+                            
+                        
+                            
+                            
+                            
+                                <category scheme="https://littlepoco.github.io/tags/%E5%BF%83%E5%BE%97/" term="心得" label="心得" />
+                            
+                        
+                    
+                
+            
+        </entry>
+    
+        <entry>
             <title type="text">Linux Command Line 指令筆記</title>
             <link rel="alternate" type="text/html" href="https://littlepoco.github.io/posts/linux_command_line/" />
             <id>https://littlepoco.github.io/posts/linux_command_line/</id>
-            <updated>2021-06-08T10:58:17&#43;08:00</updated>
+            <updated>2021-06-16T14:49:59&#43;08:00</updated>
             <published>2021-06-08T10:13:02&#43;08:00</published>
             <author>
                     <name>littlepoco</name>
@@ -29,7 +81,8 @@
                     </author>
             <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</rights><summary type="html">mv 意思：Move 移動 作用：重新命名檔案、把檔案移動到某個地方。 1 2 3 4 5 6 7 8 9 # 1.重新命名檔案 # 把Hello.py 重新命名成 main.py mv hello.py main.py # 2……</summary>
             
-                <content type="html">&lt;h2 id=&#34;mv&#34;&gt;&lt;code&gt;mv&lt;/code&gt;&lt;/h2&gt;
+                <content type="html">&lt;p&gt;&lt;img src=&#34;https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE87C8VUBuUGCEBnJ7owJnYvslUV7HWGqPAw&amp;amp;usqp=CAU&#34; alt=&#34;Command Line&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;mv&#34;&gt;&lt;code&gt;mv&lt;/code&gt;&lt;/h2&gt;
 &lt;p&gt;意思：Move 移動&lt;/p&gt;
 &lt;p&gt;作用：重新命名檔案、把檔案移動到某個地方。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
