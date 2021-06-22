@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-TW">
     <title type="text">littlepoco&#39;s Blog</title>
     <subtitle type="html">隨手寫寫一些技術文章或雜文.</subtitle>
-    <updated>2021-06-16T21:17:40&#43;08:00</updated>
+    <updated>2021-06-22T14:22:57&#43;08:00</updated>
     <id>https://littlepoco.github.io/</id>
     <link rel="alternate" type="text/html" href="https://littlepoco.github.io/" />
     <link rel="self" type="application/atom&#43;xml" href="https://littlepoco.github.io/atom.xml" />
@@ -17,10 +17,87 @@
     <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</rights>
     <generator uri="https://gohugo.io/" version="0.83.1">Hugo</generator>
         <entry>
+            <title type="text">編輯器之神 Vim 簡介與入門指南</title>
+            <link rel="alternate" type="text/html" href="https://littlepoco.github.io/posts/vim_tutorial/" />
+            <id>https://littlepoco.github.io/posts/vim_tutorial/</id>
+            <updated>2021-06-22T14:21:35&#43;08:00</updated>
+            <published>2021-06-22T11:59:47&#43;08:00</published>
+            <author>
+                    <name>littlepoco</name>
+                    <uri>https://littlepoco.github.io</uri>
+                    <email>littlepocotw@yahoo.com</email>
+                    </author>
+            <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</rights><summary type="html">Vim 簡介 Vim是一個非常古老的編輯器，在1991年由Bram Moolenaar所設計。 為什麼要學Vim 一生受用 學會Vim，不管Vim有沒有人繼……</summary>
+            
+                <content type="html">&lt;h2 id=&#34;vim-簡介&#34;&gt;Vim 簡介&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/cXRgA3A.png&#34; alt=&#34;vim&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Vim是一個非常古老的編輯器，在1991年由Bram Moolenaar所設計。&lt;/p&gt;
+&lt;h2 id=&#34;為什麼要學vim&#34;&gt;為什麼要學Vim&lt;/h2&gt;
+&lt;h3 id=&#34;一生受用&#34;&gt;一生受用&lt;/h3&gt;
+&lt;p&gt;學會Vim，不管Vim有沒有人繼續維護，你在其他編輯器上面也會找到Vim的Plugin，所以學會了Vim，你這一輩子都可以受用。&lt;/p&gt;
+&lt;p&gt;以下是一些編輯器裡面的Vim 的Plugin，你可以在你自己覺得舒適的編輯器用:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;現在主流的編輯器VSCode:&lt;a href=&#34;https://marketplace.visualstudio.com/items?itemName=vscodevim.vim&#34;&gt;VSCodeVim&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;寫Java很好用的IntelliJ IDEA:&lt;a href=&#34;https://plugins.jetbrains.com/plugin/164-ideavim&#34;&gt;IdeaVim&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;越來越少人用的Sublime Text:&lt;a href=&#34;https://www.sublimetext.com/docs/vintage.html&#34;&gt;Vintage Mode&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Github主導開發，結果被VSCode碾壓的Atom:&lt;a href=&#34;https://atom.io/packages/vim-mode&#34;&gt;Vim Mode&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;我個人平常使用、神之編輯器、之後會寫文章介紹的Emacs:&lt;a href=&#34;https://github.com/emacs-evil/evil&#34;&gt;Evil&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;提高寫扣的速度&#34;&gt;提高寫扣的速度&lt;/h3&gt;
+&lt;p&gt;Vim一開始就是被設定成一個編輯器，所以設計出的編輯方式非常高效。當你用習慣Vim，寫扣的時候你可以幾乎不離開鍵盤，提高非常高的效率。&lt;/p&gt;
+&lt;h3 id=&#34;大部分電腦上預裝&#34;&gt;大部分電腦上預裝&lt;/h3&gt;
+&lt;p&gt;大部分的電腦上，不一定會裝你平常用的編輯器，但一定會Vim或他的爸爸Vi，所以你可以直接開始寫扣。&lt;/p&gt;
+&lt;h2 id=&#34;如何學習vim&#34;&gt;如何學習Vim&lt;/h2&gt;
+&lt;h3 id=&#34;vim內建教學&#34;&gt;Vim內建教學&lt;/h3&gt;
+&lt;p&gt;在Terminal底下輸入&lt;code&gt;vimtutor&lt;/code&gt;，會跳出一個內建的Vim教學，教學沒有很長，半個小時就可以完成了，你就可以掌握最基本的Vim了。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Note: 不要刻意去記Vim的快捷鍵，用著用著自然就會記住了，不要給自己太大的壓力！&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;在自己習慣的編輯器上面裝vim&#34;&gt;在自己習慣的編輯器上面裝Vim&lt;/h3&gt;
+&lt;p&gt;接著就是在自己習慣的編輯器或IDE上面裝Vim的模擬器，這樣長久下來就會使用Vim就可以爐火純青了。&lt;/p&gt;
+&lt;h2 id=&#34;結語&#34;&gt;結語&lt;/h2&gt;
+&lt;p&gt;這篇文章簡單講了下Vim，如果有什麼問題都可以留言問我。&lt;/p&gt;
+</content>
+            
+            
+            
+            
+            
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="https://littlepoco.github.io/categories/%E6%8A%80%E8%A1%93/" term="技術" label="技術" />
+                            
+                        
+                    
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="https://littlepoco.github.io/tags/programming/" term="Programming" label="Programming" />
+                            
+                        
+                            
+                            
+                            
+                                <category scheme="https://littlepoco.github.io/tags/vim/" term="Vim" label="Vim" />
+                            
+                        
+                    
+                
+            
+        </entry>
+    
+        <entry>
             <title type="text">Among Us 遊玩心得</title>
             <link rel="alternate" type="text/html" href="https://littlepoco.github.io/posts/among_us/" />
             <id>https://littlepoco.github.io/posts/among_us/</id>
-            <updated>2021-06-16T14:47:15&#43;08:00</updated>
+            <updated>2021-06-19T20:56:03&#43;08:00</updated>
             <published>2021-06-16T14:34:15&#43;08:00</published>
             <author>
                     <name>littlepoco</name>
@@ -48,6 +125,14 @@
             
                 
                     
+                        
+                            
+                            
+                            
+                                <category scheme="https://littlepoco.github.io/categories/%E5%BF%83%E5%BE%97/" term="心得" label="心得" />
+                            
+                        
+                    
                 
                     
                         
@@ -72,7 +157,7 @@
             <title type="text">Linux Command Line 指令筆記</title>
             <link rel="alternate" type="text/html" href="https://littlepoco.github.io/posts/linux_command_line/" />
             <id>https://littlepoco.github.io/posts/linux_command_line/</id>
-            <updated>2021-06-16T14:49:59&#43;08:00</updated>
+            <updated>2021-06-19T20:57:51&#43;08:00</updated>
             <published>2021-06-08T10:13:02&#43;08:00</published>
             <author>
                     <name>littlepoco</name>
@@ -269,6 +354,14 @@ find ./ -name &lt;span class=&#34;s2&#34;&gt;&amp;#34;programming&amp;#34;&lt;/s
             
             
                 
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="https://littlepoco.github.io/categories/%E6%8A%80%E8%A1%93/" term="技術" label="技術" />
+                            
+                        
                     
                 
                     
