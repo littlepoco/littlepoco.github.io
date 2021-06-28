@@ -2,9 +2,9 @@
 
 
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-TW">
-    <title type="text">littlepoco&#39;s Blog</title>
+    <title type="text">What Do You Care What Other People Think?</title>
     <subtitle type="html">隨手寫寫一些技術文章或雜文.</subtitle>
-    <updated>2021-06-22T14:29:14&#43;08:00</updated>
+    <updated>2021-06-28T16:17:44&#43;08:00</updated>
     <id>https://littlepoco.github.io/</id>
     <link rel="alternate" type="text/html" href="https://littlepoco.github.io/" />
     <link rel="self" type="application/atom&#43;xml" href="https://littlepoco.github.io/atom.xml" />
