@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-TW">
     <title type="text">What Do You Care What Other People Think?</title>
     <subtitle type="html">隨手寫寫一些技術文章或雜文.</subtitle>
-    <updated>2021-06-28T16:17:44&#43;08:00</updated>
+    <updated>2021-06-29T11:43:33&#43;08:00</updated>
     <id>https://littlepoco.github.io/</id>
     <link rel="alternate" type="text/html" href="https://littlepoco.github.io/" />
     <link rel="self" type="application/atom&#43;xml" href="https://littlepoco.github.io/atom.xml" />
@@ -18,9 +18,9 @@
     <generator uri="https://gohugo.io/" version="0.83.1">Hugo</generator>
         <entry>
             <title type="text">編輯器之神 Vim 簡介與入門指南</title>
-            <link rel="alternate" type="text/html" href="https://littlepoco.github.io/posts/vim_tutorial/" />
-            <id>https://littlepoco.github.io/posts/vim_tutorial/</id>
-            <updated>2021-06-22T14:21:35&#43;08:00</updated>
+            <link rel="alternate" type="text/html" href="https://littlepoco.github.io/2021/06/the_god_of_editor_vim/" />
+            <id>https://littlepoco.github.io/2021/06/the_god_of_editor_vim/</id>
+            <updated>2021-06-29T11:43:23&#43;08:00</updated>
             <published>2021-06-22T11:59:47&#43;08:00</published>
             <author>
                     <name>littlepoco</name>
@@ -95,9 +95,9 @@
     
         <entry>
             <title type="text">Among Us 遊玩心得</title>
-            <link rel="alternate" type="text/html" href="https://littlepoco.github.io/posts/among_us/" />
-            <id>https://littlepoco.github.io/posts/among_us/</id>
-            <updated>2021-06-19T20:56:03&#43;08:00</updated>
+            <link rel="alternate" type="text/html" href="https://littlepoco.github.io/2021/06/among_us/" />
+            <id>https://littlepoco.github.io/2021/06/among_us/</id>
+            <updated>2021-06-29T11:41:57&#43;08:00</updated>
             <published>2021-06-16T14:34:15&#43;08:00</published>
             <author>
                     <name>littlepoco</name>
@@ -155,9 +155,9 @@
     
         <entry>
             <title type="text">Linux Command Line 指令筆記</title>
-            <link rel="alternate" type="text/html" href="https://littlepoco.github.io/posts/linux_command_line/" />
-            <id>https://littlepoco.github.io/posts/linux_command_line/</id>
-            <updated>2021-06-19T20:57:51&#43;08:00</updated>
+            <link rel="alternate" type="text/html" href="https://littlepoco.github.io/2021/06/linux_command_line/" />
+            <id>https://littlepoco.github.io/2021/06/linux_command_line/</id>
+            <updated>2021-06-29T11:41:37&#43;08:00</updated>
             <published>2021-06-08T10:13:02&#43;08:00</published>
             <author>
                     <name>littlepoco</name>
