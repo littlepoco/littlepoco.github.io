@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-TW">
     <title type="text">What Do You Care What Other People Think?</title>
     <subtitle type="html">隨手寫寫一些技術文章或雜文.</subtitle>
-    <updated>2021-06-30T15:54:52&#43;08:00</updated>
+    <updated>2021-07-02T11:09:14&#43;08:00</updated>
     <id>https://littlepoco.github.io/</id>
     <link rel="alternate" type="text/html" href="https://littlepoco.github.io/" />
     <link rel="self" type="application/atom&#43;xml" href="https://littlepoco.github.io/atom.xml" />
@@ -15,7 +15,67 @@
                 <email>littlepocotw@yahoo.com</email>
             </author>
     <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</rights>
-    <generator uri="https://gohugo.io/" version="0.83.1">Hugo</generator>
+    <generator uri="https://gohugo.io/" version="0.84.4">Hugo</generator>
+        <entry>
+            <title type="text">為什麼時間旅行是幾乎不可能的</title>
+            <link rel="alternate" type="text/html" href="https://littlepoco.github.io/2021/07/time_travel/" />
+            <id>https://littlepoco.github.io/2021/07/time_travel/</id>
+            <updated>2021-07-02T11:09:11&#43;08:00</updated>
+            <published>2021-07-02T10:13:28&#43;08:00</published>
+            <author>
+                    <name>littlepoco</name>
+                    <uri>https://littlepoco.github.io</uri>
+                    <email>littlepocotw@yahoo.com</email>
+                    </author>
+            <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</rights><summary type="html">圖片出自Unsplash 內文 先聲明這只是我自己的論點，如果你能證明有時間旅行的話，歡迎在留言區討論 今天來寫一個我覺得很有意思的議題：時間旅行……</summary>
+            
+                <content type="html">&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/MLxrrgm.jpg&#34; alt=&#34;zulfa-nazer-W9jfKmGYb1Q-unsplash&#34;&gt;&lt;/p&gt;
+&lt;p&gt;圖片出自&lt;a href=&#34;https://unsplash.com/photos/W9jfKmGYb1Q&#34;&gt;Unsplash&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;內文&#34;&gt;內文&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;先聲明這只是我自己的論點，如果你能證明有時間旅行的話，歡迎在留言區討論&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;今天來寫一個我覺得很有意思的議題：時間旅行，而這是我想了很久、很多次的所想出來的結論，那就是為什麼我覺得時空旅行不存在。&lt;/p&gt;
+&lt;p&gt;就從許多&amp;quot;未來人&amp;quot;的預言來看好了，我用一個例子來看可能會比較清楚：KFK。不知道KFK的人可以去看&lt;a href=&#34;https://www.youtube.com/watch?v=ZTxc1YY64cM&#34;&gt;老高的影片&lt;/a&gt;，我先不看KFK預言準不準，因為那不是本文的重點，之後可能在寫篇文章講解。&lt;/p&gt;
+&lt;p&gt;KFK説他出生在2020的上海，那麼假如我把2020在上海、甚至全中國所出生的嬰兒全部殺掉，這樣的話他就不可能來2019，所以也不會有預言，然後因為沒看到KFK，所以不把全中國的嬰兒殺掉，這樣的話KFK又會來......這樣一直持續這樣的循環。就跟你預判、我預判你的預判、你預判我預判你的預判、我預判你預判我預判你的預判...是一樣的。當然事實不會是這樣，但至少從這一點來看，時空旅行不太可能出現。&lt;/p&gt;
+&lt;p&gt;從上面這點來看，時空旅行若真要實現，必須建立在不改變過去或未來的情況底下，但這樣還會有誰想實現時空旅行？&lt;/p&gt;
+&lt;p&gt;接著我想說一下老高的那部影片。老高在影片裡說到，他認為KFK是唯一比較有可能進行時空旅行的，因為他是以一個意識形態、跟數據一樣，在未來建立的巨大的記憶數據庫裡遨遊的。但我覺得有點奇怪，既然他是在記憶中的過去遨遊，那為什麼我們能在豆瓣上看到他所留的文章呢？難道我們是虛擬的？那未來也不是虛擬的嗎？我覺得他的理論有點站不住腳。&lt;/p&gt;
+&lt;h2 id=&#34;結論&#34;&gt;結論&lt;/h2&gt;
+&lt;p&gt;從上面我舉的例子來説，要達成時間旅行要符合一個條件：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;時間旅行的時候不能改變未來&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;就至少從這一點來看，應該不太有可能發明出時間旅行，因為根本沒個毛用。當然我覺得從未來的角度來看，還是有一點機會發明出時間旅行，但不管有沒有時間旅行，反正都跟我們平民老百姓連個毛關係都沒有XD&lt;/p&gt;
+</content>
+            
+            
+            
+            
+            
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="https://littlepoco.github.io/categories/%E9%9B%9C%E6%96%87/" term="雜文" label="雜文" />
+                            
+                        
+                    
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="https://littlepoco.github.io/tags/%E9%9B%9C%E6%96%87/" term="雜文" label="雜文" />
+                            
+                        
+                    
+                
+            
+        </entry>
+    
         <entry>
             <title type="text">暑假要做的事</title>
             <link rel="alternate" type="text/html" href="https://littlepoco.github.io/2021/06/summer/" />
