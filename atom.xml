@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-TW">
     <title type="text">What Do You Care What Other People Think?</title>
     <subtitle type="html">隨手寫寫一些技術文章或雜文.</subtitle>
-    <updated>2021-07-02T11:09:14&#43;08:00</updated>
+    <updated>2021-07-04T16:05:23&#43;08:00</updated>
     <id>https://littlepoco.github.io/</id>
     <link rel="alternate" type="text/html" href="https://littlepoco.github.io/" />
     <link rel="self" type="application/atom&#43;xml" href="https://littlepoco.github.io/atom.xml" />
@@ -17,10 +17,10 @@
     <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</rights>
     <generator uri="https://gohugo.io/" version="0.84.4">Hugo</generator>
         <entry>
-            <title type="text">為什麼時間旅行是幾乎不可能的</title>
+            <title type="text">時間旅行</title>
             <link rel="alternate" type="text/html" href="https://littlepoco.github.io/2021/07/time_travel/" />
             <id>https://littlepoco.github.io/2021/07/time_travel/</id>
-            <updated>2021-07-02T11:09:11&#43;08:00</updated>
+            <updated>2021-07-04T16:05:10&#43;08:00</updated>
             <published>2021-07-02T10:13:28&#43;08:00</published>
             <author>
                     <name>littlepoco</name>
