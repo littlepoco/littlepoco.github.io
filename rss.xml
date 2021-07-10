@@ -23,10 +23,76 @@
         
             <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
         
-        <lastBuildDate>Sun, 04 Jul 2021 16:05:23 &#43;0800</lastBuildDate>
+        <lastBuildDate>Sat, 10 Jul 2021 11:16:45 &#43;0800</lastBuildDate>
         
             <atom:link rel="self" type="application/rss&#43;xml" href="https://littlepoco.github.io/rss.xml" />
         
+        
+            <item>
+                <title>在Emacs裡面聽音樂</title>
+                <link>https://littlepoco.github.io/2021/7/play_music_in_emacs/</link>
+                <guid isPermaLink="true">https://littlepoco.github.io/2021/7/play_music_in_emacs/</guid>
+                <pubDate>Sat, 10 Jul 2021 10:48:33 &#43;0800</pubDate>
+                
+                    <author>littlepocotw@yahoo.com (littlepoco)</author>
+                
+                <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
+                
+                    <description>&lt;p&gt;&lt;img src=&#34;https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/EmacsIcon.svg/1024px-EmacsIcon.svg.png&#34; alt=&#34;Emacs&#34;&gt;&lt;/p&gt;
+&lt;p&gt;最近在研究怎麼在Emacs裡面聽音樂(雖然我覺得Emacs對我來說已經可有可無了)，於是來紀錄一下，如何在Emacs裡面聽音樂。&lt;/p&gt;
+&lt;h2 id=&#34;emms&#34;&gt;Emms&lt;/h2&gt;
+&lt;p&gt;Emacs Multimedia System簡稱Emms，是內置在Emacs裡面的音樂播放器，使用上非常簡單，只需要記住幾個簡單的指令就好了。&lt;/p&gt;
+&lt;p&gt;在使用Emms之前，確保電腦有安裝這些東西:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Emacs(廢話)&lt;/li&gt;
+&lt;li&gt;mplayer&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Emms的基本指令，這樣就夠用了：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;M-x emms-play-directory&lt;/code&gt; 播放整個檔案夾裡面的音樂&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;M-x emms-play-file&lt;/code&gt; 播放單一音樂&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;M-x emms&lt;/code&gt; 打開Emms的介面(如下圖1)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/M7T1ATg.png&#34; alt=&#34;Screen Shot 2021-07-10 at 11.00.36 AM&#34;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;r(在播放器下)&lt;/code&gt; 隨機播放音樂&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;P(在播放器下)&lt;/code&gt; 播放/暫停音樂&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+                
+                
+                
+                
+                
+                    
+                        
+                            
+                                
+                                
+                                
+                                    <category domain="https://littlepoco.github.io/categories/%E6%8A%80%E8%A1%93/">技術</category>
+                                
+                            
+                        
+                    
+                        
+                            
+                                
+                                
+                                
+                                    <category domain="https://littlepoco.github.io/tags/emacs/">Emacs</category>
+                                
+                            
+                                
+                                
+                                
+                                    <category domain="https://littlepoco.github.io/tags/%E7%AD%86%E8%A8%98/">筆記</category>
+                                
+                            
+                        
+                    
+                
+            </item>
         
             <item>
                 <title>時間旅行</title>
